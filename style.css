@@ -1,0 +1,371 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  background-color: #1F2544;
+}
+
+
+
+/* Styling for the main heading */
+.main-heading {
+  font-size: 48px; 
+  text-align: center; 
+  margin-top: 50px; 
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  font-family: 'Arial Black', sans-serif; 
+  text-shadow: 2px 2px 4px #474F7A; 
+  transition: color 0.3s ease-in-out; 
+  color: #81689D;
+}
+
+
+
+
+.headings {
+  text-align: center;
+  padding-top: 50px;
+  color: #81689D;
+  padding-bottom: 30px;
+}
+
+.contact {
+  text-align: center;
+  padding-top: 10px;
+  color: #1F2544;
+  font-size: 24px;
+}
+
+/* Nav Menu */
+
+nav ul {
+  font-size: 16px; 
+  margin: 0;
+  padding-bottom: 20px; 
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+
+/* Styling for menu links */
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff; 
+  padding: 10px 20px; 
+  background: #81689D; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+/* Styling for menu links on hover */
+nav ul li a:hover {
+  background: #FFD0EC; 
+  color: #474F7A;
+}
+
+/* Styling for submenu links on hover */
+nav ul li ul li a:hover {
+  background: #FFD0EC;
+  
+}
+
+
+
+/* About me section */
+
+.about-container {
+  
+  margin-bottom: 20px;
+ 
+  
+}
+
+.about-container p {
+  color: #FFD0EC;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+
+/* Projects */
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 50px;
+  width: 100%;
+  height: auto;
+  line-height: 2.5;
+  
+
+}
+
+.project-link {
+  text-align: center;
+  text-decoration: none;
+  color: #FFD0EC;
+  transition: color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.project-link:hover {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.link1 {
+  grid-row: 1; /* First row */
+  grid-column: 1; /* First column */
+}
+
+.text1 {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+  width: 400px;
+  line-height: 1.5;
+  color: #FFD0EC;
+}
+
+.link2 {
+  grid-row: 2; /* Second row */
+  grid-column: 2; /* Second column */
+  
+}
+
+.text2 {
+  grid-row: 2;
+  grid-column: 3;
+  text-align: center;
+  width: 400px;
+  line-height: 1.5;
+  color: #FFD0EC;
+  height: fit-content;
+}
+
+
+
+.link3 {
+  grid-row: 3; /* Third row */
+  grid-column: 3; /* Third column */
+}
+
+.text3 {
+  grid-row: 3;
+  grid-column: 4;
+  text-align: center;
+  width: 400px;
+  line-height: 1.5;
+  color: #FFD0EC;
+}
+
+
+.project-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-image:hover {
+ 
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/* Skills section */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.skills-item {
+  text-align: center;
+  color: #FFD0EC;
+}
+
+.skills-item img {
+  width: 100px;
+  height: 90px;
+}
+
+.skills {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+
+
+
+/* github section */
+
+/* Styling for GitHub section */
+.github {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Styling for GitHub link */
+.github-link {
+  color: #FFD0EC; 
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+/* Styling for GitHub link on hover */
+.github-link:hover {
+  color: #81689D; 
+}
+
+/* footer */
+
+
+footer {
+  text-align: center; /* Center-align the content */
+  background-color: #474F7A; /* Light gray background color */
+  padding: 20px 0; /* Add padding for spacing */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFD0EC;  
+  
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 480px) {
+  /* Adjust grid layout for project container on even smaller screens */
+  .project-container {
+    grid-template-columns: auto;
+    gap: 10px; /* Adjust gap between items */
+    width: 100%; /* Ensure container spans the full width */
+  }
+
+  /* Adjust font size for main heading on smaller screens */
+  .main-heading {
+    font-size: 36px;
+  }
+
+  /* Responsive options for images */
+  .project-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Responsive options for containers */
+  .project-link {
+    padding: 5px; /* Adjust padding */
+  }
+
+  /* Responsive options for font sizes */
+  .skills {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Adjust grid layout for project container on smaller screens */
+  .project-container {
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    width: 100%; /* Ensure container spans the full width */
+  }
+
+  /* Adjust font size for main heading on smaller screens */
+  .main-heading {
+    font-size: 42px;
+  }
+
+  /* Responsive options for images */
+  .project-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Responsive options for containers */
+  .project-link {
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* Responsive options for font sizes */
+  .skills {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
+  /* Adjust grid layout for project container on medium screens */
+  .project-container {
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    width: 100%; /* Ensure container spans the full width */
+  }
+
+  /* Adjust font size for main heading on medium screens */
+  .main-heading {
+    font-size: 48px;
+  }
+
+  /* Responsive options for images */
+  .project-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Responsive options for containers */
+  .project-link {
+    padding: 15px; /* Adjust padding */
+  }
+
+  /* Responsive options for font sizes */
+  .skills {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  /* Adjust grid layout for project container on large screens */
+  .project-container {
+    grid-template-columns: repeat(4, auto);
+    gap: 40px;
+    width: 100%; /* Ensure container spans the full width */
+  }
+
+  /* Adjust font size for main heading on large screens */
+  .main-heading {
+    font-size: 54px;
+  }
+
+  /* Responsive options for images */
+  .project-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* Responsive options for containers */
+  .project-link {
+    padding: 20px; /* Adjust padding */
+  }
+
+  /* Responsive options for font sizes */
+  .skills {
+    font-size: 16px;
+  }
+}
